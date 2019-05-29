@@ -1,0 +1,110 @@
+$red: #ff1212;
+
+@import 'main-nav';
+@import 'contact-nav';
+@import 'title-logo';
+@import 'resume';
+
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #fff;
+	background-image: 	linear-gradient(177deg, #ccc 1px, rgba(255, 255, 255, 0) 50px),
+						linear-gradient(168deg, rgba(255, 255, 255, 0) 350px, #ccc 450px);
+	background-repeat: no-repeat;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: .5rem;
+	
+	box-sizing: border-box;
+
+	@media (min-width: 769px) {
+		padding: 0 3rem 3rem;
+	}
+}
+
+#header {
+	order: 1;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	font-weight: 300;
+}
+
+h2 {
+	margin: 0;
+	font-size: .875rem;
+	line-height: 1rem;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: 800;
+	margin: 1rem 0 0 0;
+}
+
+h5 {
+	font-size: .875rem;
+	font-weight: 800;
+	margin: 0;
+}
+
+h6 {
+	font-size: .875rem;
+	font-weight: 300;
+	margin: 0;
+}
+
+.box {
+	display: block;
+	border: 2px solid #999;
+	border-radius: 10px;
+	padding: 1rem 1.5rem 1.5rem 2.75rem;
+	background-color: #fff;
+}
+
+#footer {
+	text-align: center;
+	order: 4;
+
+	@media (min-width: 769px) { // tablet up
+		padding: 3rem;
+	}
+
+	.copyright {
+		font-size: .75rem;
+	}
+}
+
+.pdf-link {
+	&:after {
+		content: '';
+		display: inline-block;
+		background-image: url(../images/PDF_32.png);
+		width: 20px;
+		height: 20px;
+		background-size: 20px 20px;
+		vertical-align: text-bottom;
+		margin-left: .5rem;
+	}
+}
+

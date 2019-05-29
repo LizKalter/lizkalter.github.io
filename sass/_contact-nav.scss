@@ -1,0 +1,45 @@
+.contact-nav {
+	order: 1;
+	text-align: center;
+	margin-top: 1rem;
+
+	img {
+		display: block;
+		max-height: 40px;
+		vertical-align: middle;
+	}
+
+	.linkedin {
+		height: 14px;
+	}
+
+	.github {
+		height: 20px;
+	}
+
+	address {
+		unicode-bidi:bidi-override;
+		direction: rtl;
+		font-style: normal;
+		font-size: .75rem;
+	}
+
+	address,
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 .5rem;
+		padding: 1rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: #000;
+		text-transform: uppercase;
+	}
+
+	@media (min-width: 769px) { // tablet up
+		order: 0;
+		margin: 0 0 4rem 0;
+	}
+}
