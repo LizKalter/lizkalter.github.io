@@ -97,17 +97,17 @@
     height: 14px; }
   .contact-nav .github {
     height: 20px; }
+  .contact-nav address,
+  .contact-nav a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 1rem .5rem; }
   .contact-nav address {
     unicode-bidi: bidi-override;
     direction: rtl;
     font-style: normal;
     font-size: .75rem; }
-  .contact-nav address,
-  .contact-nav a {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 .5rem;
-    padding: 1rem; }
   .contact-nav a {
     text-decoration: none;
     color: #000;
@@ -117,7 +117,11 @@
       -webkit-box-ordinal-group: 1;
           -ms-flex-order: 0;
               order: 0;
-      margin: 0 0 4rem 0; } }
+      margin: 0 0 4rem 0; }
+      .contact-nav address,
+      .contact-nav a {
+        margin: 0 1rem;
+        padding: 1rem .5rem; } }
 
 .title-logo {
   display: inline-block;
