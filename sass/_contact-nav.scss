@@ -38,7 +38,7 @@
 		text-transform: uppercase;
 	}
 
-	@media (min-width: 769px) { // tablet up
+	@media (min-width: $tablet-up) {
 		order: 0;
 		margin: 0 0 4rem 0;
 

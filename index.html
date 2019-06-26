@@ -11,41 +11,88 @@
 		<meta property="og:url" content="https://lizkalter.github.io/" />
 		<meta property="og:description" content="Web development portfolio website for Liz Kalter." />
 		<meta property="og:locale" content="en_US" />
-
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" type="text/css" href="./css/styles.css">
 	</head>
 	<body>
 		<div class="container">
 			<header id="header">
 				<div class="title-logo bouncy-logo">
-					<div><h1>Liz Kalter</h1>
-					<h2>Front-End Web Developer</h2></div>
+					<h2>
+						<span class="name">Liz Kalter</span>
+						<span class="title">Front-End Web Developer</span>
+					</h2>
 				</div>
 			</header>
 
-			<nav class="main-nav" aria-label="Main Navigation">
-				<div class="box">
-					<h3 class="icon-header projects-icon">Projects</h3>
-					<div class="sub-nav">
-						<div class="sub-nav-section">
-							<h4><a href="/">Mad Scientist Personality Test</a></h4>
-							<div class="details">
-								<p>Built with Angular</p>
-								<a href="https://github.com/LizKalter/mad-scientist-personality-test">GitHub Repo</a>
-								<a href="https://lizkalter.github.io/mad-scientist-personality-test">Demo</a>
+			<div class="homepage-content">
+				<nav class="main-nav tabs" aria-label="Main Navigation">
+					<h1 class="tab selected"><span class="icon-header projects-icon">Projects</span></h1>
+					<a class="tab" href="./resume.html">
+						<span class="icon-header resume-icon">Resume</span>
+					</a>
+					<a class="tab" href="./portfolio.html">
+						<span class="icon-header art-icon">Portfolio</span>
+					</a>
+				</nav>
+
+				
+				<main class="projects" role="main">
+					<div class="project box top">
+						<div class="details">
+							<h4 class="title"><a href="https://lizkalter.github.io/mad-scientist-personality-test">Mad Scientist Personality Test</a></h4>
+							<p class="description">Take a short personality quiz featuring responsive design and animated transitions.</p>
+							<div class="built-with">
+								<h5>Built with:</h5>
+								<ul>
+									<li><a href="https://angular.io/">Angular</a> and the <a href="https://cli.angular.io/">Angular CLI</a></li>
+									<li><a href="https://sass-lang.com/">Sass</a> and <a href="https://www.sublimetext.com/">Sublime Text</a></li>
+								</ul>
+							</div>
+							<div class="links">
+								<a class="pill-button" href="https://github.com/LizKalter/mad-scientist-personality-test">GitHub</a>
+								<a class="pill-button" href="https://lizkalter.github.io/mad-scientist-personality-test">Demo</a>
 							</div>
 						</div>
-						<div class="sub-nav-section">
-							<h4><a href="/">NASA APOD Calendar</a></h4>
-							<div class="details">
-								<p>Built with Angular</p>
-								<a href="https://github.com/LizKalter/nasa-apod-calendar">GitHub Repo</a>
-								<a href="https://lizkalter.github.io/nasa-apod-calendar">Demo</a>
-							</div>
+						<div class="thumbnails mad-scientist-thumbnails">
+							<a href="images/projects/mad-scientist/desktop.png" class="js-modal thumbnail desktop-thumbnail">
+								<img src="images/projects/mad-scientist/desktop-thumbnail.png" alt="Desktop screenshot of Mad Scientist Personality Test" />
+							</a>
+							<a href="images/projects/mad-scientist/mobile.png" class="js-modal thumbnail mobile-thumbnail">
+								<img src="images/projects/mad-scientist/mobile-thumbnail.png" alt="Mobile screenshot of Mad Scientist Personality Test" />
+							</a>
 						</div>
 					</div>
-				</div>
-			</nav>
+					<div class="project box">
+						<div class="details">
+							<h4 class="title">
+								<a href="https://lizkalter.github.io/nasa-apod-calendar">NASA's APoD Calendar</a>
+							</h4>
+							<p class="description">Browse NASA's Astronomy Picture of the Day archive by month using this SPA integrated with NASA's <a href="https://github.com/nasa/apod-api">APoD API</a> service.</p>
+							<div class="built-with">
+								<h5>Built with:</h5>
+								<ul>
+									<li><a href="https://angular.io/">Angular</a> and the <a href="https://cli.angular.io/">Angular CLI</a></li>
+									<li><a href="https://sass-lang.com/">Sass</a> and <a href="https://www.sublimetext.com/">Sublime Text</a></li>
+								</ul>
+							</div>
+							<div class="links">
+								<a class="pill-button" href="https://github.com/LizKalter/nasa-apod-calendar">GitHub</a>
+								<a class="pill-button" href="https://lizkalter.github.io/nasa-apod-calendar">Demo</a>
+							</div>
+						</div>
+						<div class="thumbnails nasa-apod-thumbnails">
+							<a href="images/projects/nasa-apod/desktop.png" class="js-modal thumbnail desktop-thumbnail nasa-apod-desktop-thumbnail">
+								<img src="images/projects/nasa-apod/desktop-thumbnail.png" alt="Desktop screenshot of NASA's APOD Calendar" />
+							</a>
+							<a href="images/projects/nasa-apod/mobile.png" class="js-modal thumbnail mobile-thumbnail nasa-apod-mobile-thumbnail">
+								<img src="images/projects/nasa-apod/mobile-thumbnail.png" alt="Mobile screenshot of NASA's APOD Calendar" />
+							</a>
+						</div>
+					</div>
+				</main> <!-- end projects -->
+			</div>
 
 			<nav class="contact-nav" aria-label="Contact Options">
 				<a href="https://linkedin.com/in/LizKalter"><img src="./images/LinkedIn-Blue-14@2x.png" alt="LinkedIn Profile" class="linkedin" /></a>
@@ -57,5 +104,6 @@
 				<span class="copyright">&copy; Liz Kalter 2019</span>
 			</footer>
 		</div>
+		<script src="js/image-modal.js"></script>
 	</body>
 </html>

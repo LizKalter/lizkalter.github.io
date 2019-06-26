@@ -1,0 +1,126 @@
+.projects {
+	margin-top: 1rem;
+}
+
+.project {
+	margin-bottom: .5rem;
+
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.title {
+		position: relative;
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		&:before { // arrow
+			position: absolute;
+			display: inline-block;
+			content: '\00bb';
+			top: 0;
+			left: -1rem;
+			line-height: 1.15rem;
+			color: $red;
+			opacity: 0;
+			transition: all .5s;
+		}
+
+		&:hover:before, 
+		&:focus:before {  // arrow
+			opacity: 1;
+			left: -.75rem;
+		}
+	}
+
+	.description {
+		color: #666;
+		font-size: .875rem;
+		margin: 0 0 .75rem 0;
+
+		a {
+			font-weight: 900;
+		}
+	}
+
+	.built-with {
+		font-size: .875rem;
+		margin-bottom: .75rem;
+		color: #666;
+
+		h5 {
+			font-size: .875rem;
+			font-weight: normal;
+		}
+
+		a {
+			font-weight: 900;
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.details {
+		@media (min-width: $tablet-up) {
+			margin-right: 2rem;
+			width: 17rem;
+		}
+	}
+
+	.details,
+	.thumbnails {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.thumbnails {
+		position: relative;
+		width: 300px;
+		max-width: 100%;
+		margin-bottom: 20px;
+		margin-top: 1rem;
+		transition: margin .5s;
+
+		@media (min-width: $tablet-up) {
+			margin-top: 0;
+		}
+	}
+
+	.nasa-apod-thumbnails {
+		margin-bottom: 0;
+	}
+
+	.thumbnail {
+		max-width: 100%;
+	}
+
+	.desktop-thumbnail {
+		width: 300px;
+	}
+
+	.mobile-thumbnail {
+		position: absolute;
+		top: 34%;
+		right: 10%;
+		width: 26%;
+	}
+
+	.nasa-apod-mobile-thumbnail {
+		top: 8.5%;
+		right: auto;
+		left: -5%;
+	}
+}

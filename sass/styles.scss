@@ -1,9 +1,19 @@
 $red: #ff1212;
 
+$mobile-landscape-down: 767.98px;
+$mobile-portrait-down: 575.98px;
+$mobile-portrait-up: 576px;
+$tablet-up: 768px;
+$desktop-up: 992px;
+
+@import 'grid';
 @import 'main-nav';
 @import 'contact-nav';
 @import 'title-logo';
+@import 'projects';
+@import 'image-modal';
 @import 'resume';
+@import 'portfolio';
 
 html,
 body {
@@ -13,7 +23,7 @@ body {
 body {
 	padding: 0;
 	margin: 0;
-	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+	font-family: 'Lato', Futura, 'Trebuchet MS', Arial, sans-serif;
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 1.5;
@@ -21,6 +31,10 @@ body {
 	background-image: 	linear-gradient(177deg, #ccc 1px, rgba(255, 255, 255, 0) 50px),
 						linear-gradient(168deg, rgba(255, 255, 255, 0) 350px, #ccc 450px);
 	background-repeat: no-repeat;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 .container {
@@ -31,7 +45,11 @@ body {
 	
 	box-sizing: border-box;
 
-	@media (min-width: 769px) {
+	@media (min-width: $tablet-up) {
+		padding: 0 1rem 1rem;
+	}
+
+	@media (min-width: $desktop-up) {
 		padding: 0 3rem 3rem;
 	}
 }
@@ -41,52 +59,105 @@ body {
 	text-align: center;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: 0;
-	font-size: 2.25rem;
-	line-height: 2.5rem;
-	font-weight: 300;
-}
-
-h2 {
-	margin: 0;
-	font-size: .875rem;
-	line-height: 1rem;
-	font-weight: 800;
-	text-transform: uppercase;
+	font-weight: 900;
 }
 
 h4 {
 	font-size: 1rem;
-	font-weight: 800;
-	margin: 1rem 0 0 0;
 }
 
 h5 {
 	font-size: .875rem;
-	font-weight: 800;
-	margin: 0;
 }
 
 h6 {
 	font-size: .875rem;
-	font-weight: 300;
-	margin: 0;
 }
 
 .box {
 	display: block;
-	border: 2px solid #999;
 	border-radius: 10px;
-	padding: 1rem 1.5rem 1.5rem 2.75rem;
+	background-color: #eee;
+	box-shadow: 0 0 20px #ccc;
+	padding: 1rem 1.5rem 1.5rem 1.5rem;
+	margin-bottom: .5rem;
+	
+	@media (min-width: $tablet-up) {
+		padding: 2rem;
+	}
+
+	&.top {
+		background-image: linear-gradient(#fff, #eee);
+	}
+}
+
+.pill-button {
+	background-color: #333;
+	color: #ccc;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 2px 8px;
+	text-transform: uppercase;
+	font-size: .75rem;
+	transition: color, background-color .5s;
+
+	&:hover,
+	&:focus {
+		background-color: #ccc;
+		color: #333;
+	}
+}
+
+.thumbnail {
+	display: block;
+	position: relative;
 	background-color: #fff;
+	border-radius: 2px;
+	padding: .25rem;
+	box-shadow: 2px 2px rgba(0,0,0,.05);
+	//box-shadow: 1px 1px 7px rgba(0,0,0,.5);
+	transition: all .5s;
+	will-change: box-shadow;
+
+	img,
+	a {
+		display: block;
+		width: 100%;
+	}
+
+	&:before {
+		display: block;
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		transition: all .5s;
+	}
+
+	&:hover,
+	&:focus {
+		box-shadow: 1px 1px 7px rgba(0,0,0,.5);
+
+		&:before {
+			box-shadow: 0 0 10px 2px #fff inset;
+		}
+	}
 }
 
 #footer {
 	text-align: center;
 	order: 4;
 
-	@media (min-width: 769px) { // tablet up
+	@media (min-width: $tablet-up) {
 		padding: 3rem;
 	}
 
@@ -95,16 +166,16 @@ h6 {
 	}
 }
 
-.pdf-link {
-	&:after {
-		content: '';
-		display: inline-block;
-		background-image: url(../images/PDF_32.png);
-		width: 20px;
-		height: 20px;
-		background-size: 20px 20px;
-		vertical-align: text-bottom;
-		margin-left: .5rem;
-	}
+.desktop-only {
+	display: none;
 }
 
+@media (min-width: $mobile-portrait-up) {
+	.mobile-only {
+		display: none;
+	}
+
+	.desktop-only {
+		display: block;
+	}
+}

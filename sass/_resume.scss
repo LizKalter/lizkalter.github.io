@@ -2,15 +2,130 @@
 	order: 1;
 	max-width: 1080px;
 	margin: 1rem auto 0 auto;
-	padding: 1rem;
-	font-size: .875rem;
 
-	@media (min-width: 769px) { // tablet up
-		margin-top: 2rem;
-		padding: 1rem 2.75rem 1.5rem 2.75rem;
+	.box {
+		padding-top: 1.5rem;
+		margin-top: 1rem;
+		background-color: #fff;
 	}
 
-	@media (max-width: 768px) { // mobile only
+	.header {
+		font-size: 1rem;
+		color: #000;
+
+		@media (min-width: 1080px) {
+			margin-left: -13rem;
+			text-align: right;
+			width: 10rem;
+			margin-bottom: -1.4rem;
+		}
+	}
+
+	h5,
+	h6 {
+		color: #000;
+	}
+
+	.section {
+		margin-bottom: 1rem;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.pdf {
+		position: relative;
+		float: right;
+		background-color: $red;
+		padding: .4rem .2rem .8rem .2rem;
+		margin: 0 0 .5rem 2rem;
+		border-radius: 2px 8px 2px 2px;
+		color: #fff;
+		font-size: .5rem;
+		font-weight: 900;
+		text-decoration: none;
+		letter-spacing: .05rem;
+		box-shadow: 1px 1px 3px #ccc;
+
+		&:before,
+		&:after {
+			display: block;
+			content: '';
+			position: absolute;
+		}
+
+		&:before { // corner
+			top: 0;
+			right: 0;
+			width: .3rem;
+			height: .3rem;
+			border: solid #fff;
+			border-width: 0 0 1px 1px;
+		}
+
+		&:after { // line
+			height: 1px;
+			width: 8px;
+			top: 84%;
+			right: 33%;
+			background-color: #fff;
+		}
+
+		span { // arrow
+			&:before,
+			&:after {
+				display: block;
+				content: '';
+				position: absolute;
+				transition: all .5s;
+			}
+
+			&:before {
+				top: 60%;
+				right: 40%;
+				border: solid #fff;
+				border-width: 0 1px 1px 0;
+				padding: 2px;
+				transform: rotate(45deg);
+			}
+
+			&:after {
+				width: 1px;
+				height: 5px;
+				top: 60%;
+				right: 47%;
+				background-color: #fff;
+			}
+		}
+
+		&:hover,
+		&:focus { // arrow
+			span:before {
+				transform: rotate(45deg) translate(2px, 2px);
+			}
+
+			span:after {
+				transform: translateY(2px);
+			}
+		}
+	} // end pdf
+
+	@media (min-width: $tablet-up) {
+		margin-top: 3rem;
+
+		&.box {
+			padding: 1rem 2.75rem 1.5rem 2.75rem;
+		}
+	}
+
+	@media (max-width: $mobile-landscape-down) {
 		.icon-header {
 			margin-left: 1.6rem;
 		}
@@ -20,9 +135,110 @@
 		margin: 0;
 	}
 
+	.dates {
+		color: #666;
+		font-weight: 400;
+		font-size: .875rem;
+
+		&:before {
+			display: inline;
+			content: ', ';
+		}
+
+		@media (min-width: $mobile-portrait-up) {
+			border-left: 1px solid #666;
+			margin-left: .35rem;
+			padding: .5rem 0 .5rem .3rem;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.skills {
+		h4 {
+			color: #000;
+			font-size: .875rem;
+		}
+
+		ul {
+			margin-bottom: .5rem;
+		}
+
+		.first-column {
+			width: 38%;
+		}
+
+		.debugging {
+			clear: both;
+		}
+	}
+
+	.skill-group {
+		width: 28%;
+		float: left;
+		margin-left: 3%;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+	}
+
+	.desktop-skills-list {
+		display: none;
+	}
+
 	.experience {
 		p {
-			margin: 1rem 0;
+			margin: 0 0 1rem 0;
+		}
+
+		li {
+			position: relative;
+
+			&:before { // arrow
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: '\00bb';
+				margin-left: -.75rem;
+				color: $red;
+				line-height: 1.2rem;
+			}
+		}
+
+		ul {
+			margin-top: 1rem;
+		}
+	}
+
+	.education-ringling {
+		.view-portfolio {
+			margin-top: 1rem;
+		}
+	}
+
+	@media (min-width: $mobile-portrait-up) {
+		.mobile-skills-list {
+			display: none;
+		}
+
+		.desktop-skills-list {
+			display: block;
+		}
+
+		.experience-LF,
+		.education-ringling {
+			position: relative;
+
+			.view-portfolio {
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin-top: 0;
+			}
 		}
 	}
 
@@ -35,24 +251,24 @@
 			}
 		}
 	}
+}
 
-	ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
+@media (max-width: $mobile-portrait-down) {
+	.box.resume-content {
+		padding: .5rem 1rem 1rem 1rem;
+		margin-left: -.5rem;
+		margin-right: -.5rem;
+		border-radius: 0;
 	}
 
-	li {
-		position: relative;
-
-		&:before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			content: '\00bb';
-			margin-left: -.75rem;
-			color: $red;
-			line-height: 1.3rem;
-		}
+	.resume .skill-group {
+		width: auto;
+		float: none;
 	}
+}
+
+.resume-content {
+	font-size: .875rem;
+	color: #666;
+	max-width: 40rem;
 }

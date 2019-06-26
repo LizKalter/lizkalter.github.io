@@ -1,0 +1,11 @@
+.digital-images {
+	.thumbnail {
+		margin-bottom: .5rem;
+	}
+
+	@media (min-width: $mobile-portrait-up) {
+		.thumbnail {
+			margin-bottom: 1rem;
+		}
+	}
+}
