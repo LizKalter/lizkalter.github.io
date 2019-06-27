@@ -15,6 +15,10 @@ $desktop-up: 992px;
 @import 'resume';
 @import 'portfolio';
 
+html {
+	text-size-adjust: 100%;
+}
+
 html,
 body {
 	min-height: 100%;

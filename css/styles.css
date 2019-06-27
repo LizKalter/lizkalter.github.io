@@ -1081,6 +1081,12 @@ body.modal-open {
     .portfolio {
       margin-top: 3rem; } }
 
+html {
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
+
 html,
 body {
   min-height: 100%; }
