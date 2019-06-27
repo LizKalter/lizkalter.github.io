@@ -64,55 +64,55 @@
 @keyframes bounce {
 	0% {
 		transform: translateY(-200px); // down
-		height: 3.25rem;
+		height: 3.25em;
 	}
 	16% {
 		transform: translateY(-50px); // up
-		height: 3.25rem;
+		height: 3.25em;
 	}
 	26% {
 		transform: translateY(20px); // down
-		height: 2rem;
+		height: 2em;
 	}
 	35% {
   		transform: translateY(-50px); // up
-		height: 3.25rem;
+		height: 3.25em;
 	}
 	43% {
   		transform: translateY(15px); // down
-  		height: 2.5rem;
+  		height: 2.5em;
 	}
 	53% {
   		transform: translateY(-20px); // up
-		height: 3.25rem;
+		height: 3.25em;
 	}
 	62% {
 		transform: translateY(6px); // down
-  		height: 3rem;
+  		height: 3em;
 	}
 	70% {
   		transform: translateY(-8px); // up
-		height: 3.25rem;
+		height: 3.25em;
 	}
 	78% {
   		transform: translateY(5px); // down
-		height: 3.25rem;
+		height: 3.25em;
 	}
 	85% {
   		transform: translateY(-3px); // up
-		height: 3.25rem;
+		height: 3.25em;
 	}
 	92% {
 		transform: translateY(2px); // down
-		height: 3.25rem;
+		height: 3.25em;
 	}
 	96% {
 		transform: translateY(-1px); // up
-		height: 3.25rem;
+		height: 3.25em;
 	}
 	100% {
   		transform: translateY(0); // down
-		height: 3.25rem;
+		height: 3.25em;
 	}
 }
 
@@ -124,62 +124,61 @@
 	16% {
 		width: 0;
 		height: 0;
-		left: .95rem;
+		left: .95em;
 	}
 	26% {
-		width: 2.5rem;
-		height: .2rem;
-		left: .45rem;
+		width: 2.5em;
+		height: .2em;
+		left: .45em;
 	}
 	35% {
   		width: 0;
 		height: 0;
-		left: .95rem;
+		left: .95em;
 	}
 	43% {
-  		width: 2.5rem;
-		height: .2rem;
-		left: .45rem;
+  		width: 2.5em;
+		height: .2em;
+		left: .45em;
 	}
 	53% {
-  		width: 1rem;
-		height: .08rem;
-		left: .95rem;
+  		width: 1em;
+		height: .08em;
+		left: .95em;
 	}
 	62% {
-  		width: 2.5rem;
-		height: .2rem;
-		left: .45rem;
+  		width: 2.5em;
+		height: .2em;
+		left: .45em;
 	}
 	70% {
-  		width: 1rem;
-		height: .08rem;
-		left: .95rem;
+  		width: 1em;
+		height: .08em;
+		left: .95em;
 	}
 	78% {
-  		width: 2.5rem;
-		height: .2rem;
-		left: .45rem;
+  		width: 2.5em;
+		height: .2em;
+		left: .45em;
 	}
 	85% {
-  		width: 1rem;
-		height: .08rem;
-		left: .95rem;
+  		width: 1em;
+		height: .08em;
+		left: .95em;
 	}
 	92% {
-		width: 2.5rem;
-		height: .2rem;
-		left: .45rem;
+		width: 2.5em;
+		height: .2em;
+		left: .45em;
 	}
 	96% {
-		width: 1rem;
-		height: .08rem;
-		left: .95rem;
+		width: 1em;
+		height: .08em;
+		left: .95em;
 	}
 	100% {
-  		width: 2.5rem;
-		height: .2rem;
-		//left: .45rem;
+  		width: 2.5em;
+		height: .2em;
 	}
 }
 

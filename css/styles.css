@@ -243,109 +243,109 @@
   0% {
     -webkit-transform: translateY(-200px);
             transform: translateY(-200px);
-    height: 3.25rem; }
+    height: 3.25em; }
   16% {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
-    height: 3.25rem; }
+    height: 3.25em; }
   26% {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
-    height: 2rem; }
+    height: 2em; }
   35% {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
-    height: 3.25rem; }
+    height: 3.25em; }
   43% {
     -webkit-transform: translateY(15px);
             transform: translateY(15px);
-    height: 2.5rem; }
+    height: 2.5em; }
   53% {
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px);
-    height: 3.25rem; }
+    height: 3.25em; }
   62% {
     -webkit-transform: translateY(6px);
             transform: translateY(6px);
-    height: 3rem; }
+    height: 3em; }
   70% {
     -webkit-transform: translateY(-8px);
             transform: translateY(-8px);
-    height: 3.25rem; }
+    height: 3.25em; }
   78% {
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
-    height: 3.25rem; }
+    height: 3.25em; }
   85% {
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
-    height: 3.25rem; }
+    height: 3.25em; }
   92% {
     -webkit-transform: translateY(2px);
             transform: translateY(2px);
-    height: 3.25rem; }
+    height: 3.25em; }
   96% {
     -webkit-transform: translateY(-1px);
             transform: translateY(-1px);
-    height: 3.25rem; }
+    height: 3.25em; }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    height: 3.25rem; } }
+    height: 3.25em; } }
 
 @keyframes bounce {
   0% {
     -webkit-transform: translateY(-200px);
             transform: translateY(-200px);
-    height: 3.25rem; }
+    height: 3.25em; }
   16% {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
-    height: 3.25rem; }
+    height: 3.25em; }
   26% {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
-    height: 2rem; }
+    height: 2em; }
   35% {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
-    height: 3.25rem; }
+    height: 3.25em; }
   43% {
     -webkit-transform: translateY(15px);
             transform: translateY(15px);
-    height: 2.5rem; }
+    height: 2.5em; }
   53% {
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px);
-    height: 3.25rem; }
+    height: 3.25em; }
   62% {
     -webkit-transform: translateY(6px);
             transform: translateY(6px);
-    height: 3rem; }
+    height: 3em; }
   70% {
     -webkit-transform: translateY(-8px);
             transform: translateY(-8px);
-    height: 3.25rem; }
+    height: 3.25em; }
   78% {
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
-    height: 3.25rem; }
+    height: 3.25em; }
   85% {
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
-    height: 3.25rem; }
+    height: 3.25em; }
   92% {
     -webkit-transform: translateY(2px);
             transform: translateY(2px);
-    height: 3.25rem; }
+    height: 3.25em; }
   96% {
     -webkit-transform: translateY(-1px);
             transform: translateY(-1px);
-    height: 3.25rem; }
+    height: 3.25em; }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    height: 3.25rem; } }
+    height: 3.25em; } }
 
 @-webkit-keyframes bounce-shadow {
   0% {
@@ -354,50 +354,50 @@
   16% {
     width: 0;
     height: 0;
-    left: .95rem; }
+    left: .95em; }
   26% {
-    width: 2.5rem;
-    height: .2rem;
-    left: .45rem; }
+    width: 2.5em;
+    height: .2em;
+    left: .45em; }
   35% {
     width: 0;
     height: 0;
-    left: .95rem; }
+    left: .95em; }
   43% {
-    width: 2.5rem;
-    height: .2rem;
-    left: .45rem; }
+    width: 2.5em;
+    height: .2em;
+    left: .45em; }
   53% {
-    width: 1rem;
-    height: .08rem;
-    left: .95rem; }
+    width: 1em;
+    height: .08em;
+    left: .95em; }
   62% {
-    width: 2.5rem;
-    height: .2rem;
-    left: .45rem; }
+    width: 2.5em;
+    height: .2em;
+    left: .45em; }
   70% {
-    width: 1rem;
-    height: .08rem;
-    left: .95rem; }
+    width: 1em;
+    height: .08em;
+    left: .95em; }
   78% {
-    width: 2.5rem;
-    height: .2rem;
-    left: .45rem; }
+    width: 2.5em;
+    height: .2em;
+    left: .45em; }
   85% {
-    width: 1rem;
-    height: .08rem;
-    left: .95rem; }
+    width: 1em;
+    height: .08em;
+    left: .95em; }
   92% {
-    width: 2.5rem;
-    height: .2rem;
-    left: .45rem; }
+    width: 2.5em;
+    height: .2em;
+    left: .45em; }
   96% {
-    width: 1rem;
-    height: .08rem;
-    left: .95rem; }
+    width: 1em;
+    height: .08em;
+    left: .95em; }
   100% {
-    width: 2.5rem;
-    height: .2rem; } }
+    width: 2.5em;
+    height: .2em; } }
 
 @keyframes bounce-shadow {
   0% {
@@ -406,50 +406,50 @@
   16% {
     width: 0;
     height: 0;
-    left: .95rem; }
+    left: .95em; }
   26% {
-    width: 2.5rem;
-    height: .2rem;
-    left: .45rem; }
+    width: 2.5em;
+    height: .2em;
+    left: .45em; }
   35% {
     width: 0;
     height: 0;
-    left: .95rem; }
+    left: .95em; }
   43% {
-    width: 2.5rem;
-    height: .2rem;
-    left: .45rem; }
+    width: 2.5em;
+    height: .2em;
+    left: .45em; }
   53% {
-    width: 1rem;
-    height: .08rem;
-    left: .95rem; }
+    width: 1em;
+    height: .08em;
+    left: .95em; }
   62% {
-    width: 2.5rem;
-    height: .2rem;
-    left: .45rem; }
+    width: 2.5em;
+    height: .2em;
+    left: .45em; }
   70% {
-    width: 1rem;
-    height: .08rem;
-    left: .95rem; }
+    width: 1em;
+    height: .08em;
+    left: .95em; }
   78% {
-    width: 2.5rem;
-    height: .2rem;
-    left: .45rem; }
+    width: 2.5em;
+    height: .2em;
+    left: .45em; }
   85% {
-    width: 1rem;
-    height: .08rem;
-    left: .95rem; }
+    width: 1em;
+    height: .08em;
+    left: .95em; }
   92% {
-    width: 2.5rem;
-    height: .2rem;
-    left: .45rem; }
+    width: 2.5em;
+    height: .2em;
+    left: .45em; }
   96% {
-    width: 1rem;
-    height: .08rem;
-    left: .95rem; }
+    width: 1em;
+    height: .08em;
+    left: .95em; }
   100% {
-    width: 2.5rem;
-    height: .2rem; } }
+    width: 2.5em;
+    height: .2em; } }
 
 .bouncy-logo:before {
   -webkit-animation: bounce 1s .6s ease-out;
