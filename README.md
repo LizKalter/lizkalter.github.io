@@ -1,6 +1,6 @@
 # lizkalter.github.io
 
-My porfolio and resume website.
+My portfolio and resume website.
 
 ## Built With
 
