@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Liz Kalter | Front-End Web Developer",
+    "short_name": "Liz Kalter",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,11 @@
             "type": "image/png"
         }
     ],
+    "start_url": "/",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "orientation": "any",
+    "display": "standalone",
+    "lang": "en-US",
+    "description": "Web development portfolio for Liz Kalter"
 }
