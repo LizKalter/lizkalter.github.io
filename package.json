@@ -13,6 +13,7 @@
     "last 2 versions"
   ],
   "author": "Liz Kalter",
+  "private": true,
   "dependencies": {
     "autoprefixer": "^9.7.2",
     "node-sass": "^4.13.0",
