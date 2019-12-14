@@ -21,9 +21,11 @@
 		}
 	}
 
+	h4,
 	h5,
 	h6 {
 		color: #000;
+		font-size: .875rem;
 	}
 
 	.section {
@@ -151,11 +153,6 @@
 	}
 
 	.skills {
-		h4 {
-			color: #000;
-			font-size: .875rem;
-		}
-
 		ul {
 			margin-bottom: .5rem;
 		}
@@ -189,23 +186,27 @@
 			margin: 0 0 1rem 0;
 		}
 
-		li {
-			position: relative;
+		.accomplishments {
+			margin-top: 1rem;
 
-			&:before { // arrow
-				position: absolute;
-				top: 0;
-				left: 0;
-				content: '\00bb';
-				margin-left: -.75rem;
-				color: $red;
-				line-height: 1.2rem;
+			li {
+				position: relative;
+
+				&:before { // arrow
+					position: absolute;
+					top: 0;
+					left: 0;
+					content: '\00bb';
+					margin-left: -.75rem;
+					color: $red;
+					line-height: 1.2rem;
+				}
 			}
 		}
+	}
 
-		ul {
-			margin-top: 1rem;
-		}
+	.experience-current {
+		margin-bottom: 1rem;
 	}
 
 	.education-ringling {
@@ -239,10 +240,6 @@
 	.education {
 		p {
 			margin: 0 0 1rem 0;
-
-			&:last-child {
-				margin: 0;
-			}
 		}
 	}
 }
