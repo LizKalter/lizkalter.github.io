@@ -6,10 +6,6 @@
 	color: #000;
 	text-decoration: none;
 
-	img {
-		width: 276px;
-	}
-
 	h1 {
 		margin: 0;
 	}
@@ -39,8 +35,8 @@
 		position: absolute;
 		top: .2rem;
 		left: 0;
-		width: 3.25rem;
-		height: 3.25rem;
+		width: 3.26rem;
+		height: 3.26rem;
 		border-radius: 50%;
 		background-color: $red;
 		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><path d="M84.519,91.9q-8.84-13.134-13.85-20.994-4.972-7.866-7.1-11.77c-1.431-2.607-2.562-4.912-3.406-6.9q-3.028-7.164-.285-13.48,2.713-6.329,10.309-9.54c5.048-2.139,9.735-2.41,14.015-.782q6.465,2.417,9.494,9.583c0.844,1.991,1.7,4.4,2.593,7.235s2.065,7.264,3.526,13.292q2.17,9.044,5.47,24.549,3.255,15.509,8.439,40.992l-5.592,2.374Q93.4,105.022,84.519,91.9Zm22.712,56.771a17.72,17.72,0,0,1,32.762-.257,16.128,16.128,0,0,1,0,13.277,18.6,18.6,0,0,1-23.088,9.8,16.077,16.077,0,0,1-9.554-9.238A17.071,17.071,0,0,1,107.231,148.671Z" style="fill:white;"/></svg>');
@@ -64,11 +60,11 @@
 @keyframes bounce {
 	0% {
 		transform: translateY(-200px); // down
-		height: 3.25em;
+		height: 3.26em;
 	}
 	16% {
 		transform: translateY(-50px); // up
-		height: 3.25em;
+		height: 3.26em;
 	}
 	26% {
 		transform: translateY(20px); // down
@@ -76,7 +72,7 @@
 	}
 	35% {
   		transform: translateY(-50px); // up
-		height: 3.25em;
+		height: 3.26em;
 	}
 	43% {
   		transform: translateY(15px); // down
@@ -84,7 +80,7 @@
 	}
 	53% {
   		transform: translateY(-20px); // up
-		height: 3.25em;
+		height: 3.26em;
 	}
 	62% {
 		transform: translateY(6px); // down
@@ -92,27 +88,27 @@
 	}
 	70% {
   		transform: translateY(-8px); // up
-		height: 3.25em;
+		height: 3.26em;
 	}
 	78% {
   		transform: translateY(5px); // down
-		height: 3.25em;
+		height: 3.26em;
 	}
 	85% {
   		transform: translateY(-3px); // up
-		height: 3.25em;
+		height: 3.26em;
 	}
 	92% {
 		transform: translateY(2px); // down
-		height: 3.25em;
+		height: 3.26em;
 	}
 	96% {
 		transform: translateY(-1px); // up
-		height: 3.25em;
+		height: 3.26em;
 	}
 	100% {
   		transform: translateY(0); // down
-		height: 3.25em;
+		height: 3.26em;
 	}
 }
 
