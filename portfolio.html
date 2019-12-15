@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<meta charset="UTF-8"/>
+		<meta charset="utf-8"/>
 		<title>Portfolio | Liz Kalter | Front-End Web Developer</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Portfolio for Liz Kalter, front-end web developer." />
 		<meta property="og:title" content="Portfolio | Liz Kalter | Front-End Web Developer" />
 		<meta property="og:type" content="website" />
@@ -38,63 +38,65 @@
 
 			<div class="portfolio">
 				<nav class="main-nav tabs" aria-label="Main Navigation">
-					<a class="tab" href="./index.html">
-						<span class="icon-header projects-icon">Projects</span>
-					</a>
-					<a class="tab" href="./resume.html">
-						<span class="icon-header resume-icon">Resume</span>
-					</a>
-					<h1 class="tab selected"><span class="icon-header art-icon">Portfolio</span></h1>
+					<ul>
+						<li class="tab">
+							<a href="./index.html">
+								<span class="icon-header projects-icon">Projects</span>
+							</a>
+						</li>
+						<li class="tab">
+							<a href="./resume.html">
+								<span class="icon-header resume-icon">Resume</span>
+							</a>
+						</li>
+						<li class="tab selected">
+							<h1><span class="icon-header art-icon">Portfolio</span></h1>
+						</li>
+					</ul>
 				</nav>
 
 				<main class="portfolio-content" role="main">
 					<div id="sticky-nav">
 						<nav id="scrollspy-nav" class="portfolio-nav">
-							<a href="#LF" class="level-1">Lebhar-Friedman</a>
-							<nav>
-								<ul>
-									<li class="level-2"><a href="#LF-websites">Websites</a></li>
-									<li class="level-2"><a href="#LF-newsletters">Email Newsletters</a></li>
-									<li class="level-2"><a href="#LF-logos">Logos</a></li>
-									<li class="level-2"><a href="#LF-banner-ads">Banner ads</a></li>
-									<li class="level-2">
-										<a href="#LF-print">Print</a>
-										<ul>
-											<li class="level-3"><a href="#LF-print-books">Book covers & cd-roms</a></li>
-											<li class="level-3"><a href="#LF-brochures">Brochures</a></li>
-											<li class="level-3"><a href="#LF-print-magazines">Magazine Ads</a></li>
-										</ul>
-									</li>
-								</ul>
-							</nav>
-							<a href="#Ringling" class="level-1">Ringling</a>
-							<nav>
-								<ul>
-									<li class="level-2"><a href="#Ringling-animation">Animation</a></li>
-									<li class="level-2">
-										<a href="#Ringling-life-drawing">Life Drawing</a>
-										<ul>
-											<li class="level-3"><a href="#Ringling-gestures">Gestures</a></li>
-											<li class="level-3"><a href="#Ringling-figures">Figures</a></li>
-											<li class="level-3"><a href="#Ringling-still-lifes">Still Lifes</a></li>
-										</ul>
-									</li>
-									<li class="level-2"><a href="#Ringling-digital">Digital Art</a></li>
-								</ul>
-							</nav>
-							<a href="#independent-work" class="level-1">Independent Work</a>
-							<nav>
-								<ul>
-									<li class="level-2"><a href="#independent-3D">3D Digital Art</a></li>
-									<li class="level-2"><a href="#independent-2D">2D Digital Art</a></li>
-									<!--li class="level-2"><a href="#independent-animation">Animation</a></li-->
-								</ul>
-							</nav>
+							<a href="#LF" class="level-1" id="LF-nav">Lebhar-Friedman</a>
+							<ul aria-labelledby="LF-nav">
+								<li class="level-2"><a href="#LF-websites">Websites</a></li>
+								<li class="level-2"><a href="#LF-newsletters">Email Newsletters</a></li>
+								<li class="level-2"><a href="#LF-logos">Logos</a></li>
+								<li class="level-2"><a href="#LF-banner-ads">Banner ads</a></li>
+								<li class="level-2">
+									<a href="#LF-print" id="LF-print-nav">Print</a>
+									<ul aria-labelledby="LF-print-nav">
+										<li class="level-3"><a href="#LF-print-books">Book covers & cd-roms</a></li>
+										<li class="level-3"><a href="#LF-brochures">Brochures</a></li>
+										<li class="level-3"><a href="#LF-print-magazines">Magazine Ads</a></li>
+									</ul>
+								</li>
+							</ul>
+							<a href="#Ringling" class="level-1" id="Ringling-nav">Ringling</a>
+							<ul aria-labelledby="Ringling-nav">
+								<li class="level-2"><a href="#Ringling-animation">Animation</a></li>
+								<li class="level-2">
+									<a href="#Ringling-life-drawing" id="Ringling-life-nav">Life Drawing</a>
+									<ul aria-labelledby="Ringling-life-nav">
+										<li class="level-3"><a href="#Ringling-gestures">Gestures</a></li>
+										<li class="level-3"><a href="#Ringling-figures">Figures</a></li>
+										<li class="level-3"><a href="#Ringling-still-lifes">Still Lifes</a></li>
+									</ul>
+								</li>
+								<li class="level-2"><a href="#Ringling-digital">Digital Art</a></li>
+							</ul>
+							<a href="#independent-work" class="level-1" id="ind-nav">Independent Work</a>
+							<ul aria-labelledby="ind-nav">
+								<li class="level-2"><a href="#independent-3D">3D Digital Art</a></li>
+								<li class="level-2"><a href="#independent-2D">2D Digital Art</a></li>
+								<!--li class="level-2"><a href="#independent-animation">Animation</a></li-->
+							</ul>
 						</nav>
 					</div>
 
 					<div class="content">
-						<div id="LF" class="box LF-websites">
+						<section id="LF" class="box LF-websites">
 							<div class="section-header">
 								<h2 class="level-1-header">Lebhar-Friedman</h2>
 								<h3 id="LF-websites" class="level-2-header">Websites</h3>
@@ -153,9 +155,9 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</section>
 
-						<div id="LF-newsletters" class="box">
+						<section id="LF-newsletters" class="box">
 							<div class="section-header">
 								<span class="level-1-header">Lebhar-Friedman</span>
 								<h3 class="level-2-header">Email Newsletters</h3>
@@ -199,9 +201,9 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</section>
 
-						<div id="LF-logos" class="box">
+						<section id="LF-logos" class="box">
 							<div class="section-header">
 								<span class="level-1-header">Lebhar-Friedman</span>
 								<h3 class="level-2-header">Logos</h3>
@@ -236,9 +238,9 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</section>
 
-						<div id="LF-banner-ads" class="box LF-banner-ads-box">
+						<section id="LF-banner-ads" class="box LF-banner-ads-box">
 							<div class="section-header">
 								<span class="level-1-header">Lebhar-Friedman</span>
 								<h3 id="LF-banners" class="level-2-header">Banner ads</h3>
@@ -285,9 +287,9 @@
 									<img src="images/portfolio/LF/banner-ads/ad_medopp_2_120x600-v3.gif" alt="Banner ad" class="skyscraper" />
 								</div>
 							</div>
-						</div>
+						</section>
 
-						<div id="LF-print" class="box">
+						<section id="LF-print" class="box">
 							<div class="section-header">
 								<span class="level-1-header">Lebhar-Friedman</span>
 								<h3 class="level-2-header">Print</h3>
@@ -366,9 +368,9 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</section>
 
-						<div class="box">
+						<section class="box">
 							<div class="section-header">
 								<h2 id="Ringling" class="level-1-header">Ringling</h2>
 								<h3 id="Ringling-animation" class="level-2-header">Animation</h3>
@@ -484,8 +486,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div id="Ringling-life-drawing" class="box">
+						</section>
+						<section id="Ringling-life-drawing" class="box">
 							<div class="section-header">
 								<span class="level-1-header">Ringling</span>
 								<h3 class="level-2-header">Life Drawing</h3>
@@ -550,8 +552,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div id="Ringling-digital" class="box">
+						</section>
+						<section id="Ringling-digital" class="box">
 							<div class="section-header">
 								<span class="level-1-header">Ringling</span>
 								<h3 class="level-2-header">Digital Art</h3>
@@ -582,10 +584,10 @@
 									</a>
 								</div>
 							</div>
-						</div>
+						</section>
 
 
-						<div id="independent-work" class="box">
+						<section id="independent-work" class="box">
 							<div class="section-header">
 								<h2 class="level-1-header">Independent Work</h2>
 								<h3 id="independent-3D" class="level-2-header">3D Digital Art</h3>
@@ -626,8 +628,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div id="independent-2D" class="box">
+						</section>
+						<section id="independent-2D" class="box">
 							<div class="section-header">
 								<span class="level-1-header">Independent Work</span>
 								<h3 class="level-2-header">2D Digital Art</h3>
@@ -680,8 +682,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<!--div id="independent-animation" class="box">
+						</section>
+						<!--section id="independent-animation" class="box">
 							<div class="section-header">
 								<span class="level-1-header">Independent Work</span>
 								<h3 class="level-2-header">Animation</h3>
@@ -689,15 +691,23 @@
 							<div>
 								<a href="images/portfolio/independent/animation/breaking-flask.mp4" target="_blank">Breaking Flask</a>
 							</div>
-						</div-->
+						</section-->
 					</div>
 				</main>
 			</div>
 
 			<nav class="contact-nav" aria-label="Contact Options">
-				<a href="https://linkedin.com/in/LizKalter"><img src="./images/LinkedIn-Blue-14@2x.png" alt="LinkedIn Profile" class="linkedin" /></a>
-				<a href="https://github.com/LizKalter"><img src="./images/GitHub_Logo.png" alt="GitHub Profile" class="github" /></a>
-				<address>moc.liamg@retlak.zil</address>
+				<ul>
+					<li>
+						<a href="https://linkedin.com/in/LizKalter"><img src="./images/LinkedIn-Blue-14@2x.png" alt="LinkedIn Profile" class="linkedin" /></a>
+					</li>
+					<li>
+						<a href="https://github.com/LizKalter"><img src="./images/GitHub_Logo.png" alt="GitHub Profile" class="github" /></a>
+					</li>
+					<li>
+						<address>moc.liamg@retlak.zil</address>
+					</li>
+				</ul>
 			</nav>
 
 			<footer id="footer">
