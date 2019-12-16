@@ -23,10 +23,20 @@
 
 	.linkedin {
 		height: 14px;
+
+		@media screen and (prefers-color-scheme: dark) {
+			filter: brightness(0) invert(1);
+			opacity: .9;
+		}
 	}
 
 	.github {
 		height: 20px;
+
+		@media screen and (prefers-color-scheme: dark) {
+			filter: brightness(0) invert(1);
+			opacity: .9;
+		}
 	}
 
 	address,

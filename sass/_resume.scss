@@ -7,11 +7,16 @@
 		padding-top: 1.5rem;
 		margin-top: 1rem;
 		background-color: #fff;
+
+		@media screen and (prefers-color-scheme: dark) {
+			background-color: $dark-mode-bg-color;
+		}
 	}
 
 	.header {
 		font-size: 1rem;
-		color: #000;
+
+		@include font-color-primary;
 
 		@media (min-width: 1080px) {
 			margin-left: -13rem;
@@ -24,8 +29,9 @@
 	h4,
 	h5,
 	h6 {
-		color: #000;
 		font-size: .875rem;
+
+		@include font-color-primary;
 	}
 
 	.section {
@@ -55,6 +61,10 @@
 		text-decoration: none;
 		letter-spacing: .05rem;
 		box-shadow: 1px 1px 3px #ccc;
+
+		@media screen and (prefers-color-scheme: dark) {
+			box-shadow: 1px 1px 3px #000;
+		}
 
 		&:before,
 		&:after {
@@ -132,9 +142,10 @@
 	}
 
 	.dates {
-		color: #666;
 		font-weight: 400;
 		font-size: .875rem;
+
+		@include font-color-accent;
 
 		&:before {
 			display: inline;
@@ -148,6 +159,10 @@
 
 			&:before {
 				display: none;
+			}
+
+			@media screen and (prefers-color-scheme: dark) {
+				border-color: darken($dark-mode-font-color, 5%);
 			}
 		}
 	}
@@ -260,6 +275,7 @@
 
 .resume-content {
 	font-size: .875rem;
-	color: #666;
 	max-width: 40rem;
+
+	@include font-color-accent;
 }

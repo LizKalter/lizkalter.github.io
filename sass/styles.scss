@@ -6,6 +6,25 @@ $mobile-portrait-up: 576px;
 $tablet-up: 768px;
 $desktop-up: 992px;
 
+$dark-mode-bg-color: #0b0036;
+$dark-mode-font-color: lighten($dark-mode-bg-color, 85%);
+
+@mixin font-color-primary {
+	color: #000;
+
+	@media screen and (prefers-color-scheme: dark) {
+		color: $dark-mode-font-color;
+	}
+}
+
+@mixin font-color-accent {
+	color: #666;
+
+	@media screen and (prefers-color-scheme: dark) {
+		color: darken($dark-mode-font-color, 10%);
+	}
+}
+
 @import 'grid';
 @import 'main-nav';
 @import 'contact-nav';
@@ -35,6 +54,13 @@ body {
 	background-image: 	linear-gradient(177deg, #ccc 1px, rgba(255, 255, 255, 0) 50px),
 						linear-gradient(168deg, rgba(255, 255, 255, 0) 350px, #ccc 450px);
 	background-repeat: no-repeat;
+
+	@media screen and (prefers-color-scheme: dark) {
+		background-color: $dark-mode-bg-color;
+		background-image: 	linear-gradient(177deg, #000 1px, rgba(11, 0, 54, 0) 50px),
+							linear-gradient(168deg, rgba(11, 0, 54, 0) 350px, darken($dark-mode-bg-color, 5%) 450px);
+		color: $dark-mode-font-color;
+	}
 }
 
 * {
@@ -100,6 +126,16 @@ h6 {
 	&.top {
 		background-image: linear-gradient(#fff, #eee);
 	}
+
+	@media screen and (prefers-color-scheme: dark) {
+		box-shadow: 0 0 20px #000;
+		background-color: $dark-mode-bg-color;
+		border: 1px solid lighten($dark-mode-bg-color, 10%);
+
+		&.top {
+			background-image: none;
+		}
+	}
 }
 
 .pill-button {
@@ -117,6 +153,17 @@ h6 {
 		background-color: #ccc;
 		color: #333;
 	}
+
+	@media screen and (prefers-color-scheme: dark) {
+		background-color: lighten($dark-mode-bg-color, 20%);
+		color: $dark-mode-font-color;
+
+		&:hover,
+		&:focus {
+			background-color: $dark-mode-font-color;
+			color: lighten($dark-mode-bg-color, 20%);
+		}
+	}
 }
 
 .thumbnail {
@@ -126,9 +173,12 @@ h6 {
 	border-radius: 2px;
 	padding: .25rem;
 	box-shadow: 2px 2px rgba(0,0,0,.05);
-	//box-shadow: 1px 1px 7px rgba(0,0,0,.5);
 	transition: all .5s;
 	will-change: box-shadow;
+
+	@media screen and (prefers-color-scheme: dark) {
+		background-color: darken($dark-mode-font-color, 5%);
+	}
 
 	img,
 	a {

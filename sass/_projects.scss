@@ -24,7 +24,8 @@
 
 		a {
 			text-decoration: none;
-			color: #000;
+
+			@include font-color-primary;
 		}
 
 		&:before { // arrow
@@ -47,19 +48,25 @@
 	}
 
 	.description {
-		color: #666;
 		font-size: .875rem;
 		margin: 0 0 .75rem 0;
 
+		@include font-color-accent;
+
 		a {
 			font-weight: 900;
+
+			@media screen and (prefers-color-scheme: dark) {
+				color: darken($dark-mode-font-color, 20%);
+			}
 		}
 	}
 
 	.built-with {
 		font-size: .875rem;
 		margin-bottom: .75rem;
-		color: #666;
+
+		@include font-color-accent;
 
 		h4 {
 			font-size: .875rem;
@@ -74,6 +81,12 @@
 			list-style-type: none;
 			padding: 0;
 			margin: 0;
+		}
+
+		@media screen and (prefers-color-scheme: dark) {
+			a {
+				color: darken($dark-mode-font-color, 20%);
+			}
 		}
 	}
 

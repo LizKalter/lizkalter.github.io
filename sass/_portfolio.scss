@@ -29,6 +29,10 @@
 		font-size: .8125rem;
 		font-weight: 900;
 		text-transform: uppercase;
+
+		@media screen and (prefers-color-scheme: dark) {
+			border-color: $dark-mode-font-color;
+		}
 	}
 
 	.content {
