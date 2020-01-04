@@ -91,7 +91,7 @@
 	}
 
 	.project-sublist {
-			font-size: .875rem;
+		font-size: .875rem;
 
 		h4 {
 			display: inline-block;
@@ -100,8 +100,27 @@
 			font-size: .875rem;
 		}
 
-		li {
+		> li {
 			margin-top: .25rem;
+			padding-bottom: .35rem;
+			border-bottom: 1px solid darken(#eee, 20%);
+
+			@media screen and (prefers-color-scheme: dark) {
+				//background-color: darken($dark-mode-bg-color, 5%);
+				border-bottom: 1px solid lighten($dark-mode-bg-color, 20%);
+			}
+
+			&:last-child {
+				border: 0;
+			}
+		}
+	}
+
+	.button-list {
+		display: inline-block;
+
+		li {
+			display: inline-block;
 		}
 	}
 
