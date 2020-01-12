@@ -1,14 +1,33 @@
 .projects {
 	margin-top: 1rem;
+
+	@media (min-width: $tablet-up) {
+		margin-top: 2rem;
+	}
+
+	@media (min-width: $large-desktop-up) {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-column-gap: .5rem;
+		grid-row-gap: .5rem;
+
+		.project {
+			margin: 0;
+		}
+	}
 }
 
 .project {
 	margin-bottom: .5rem;
 
-	&:after {
-		content: '';
-		display: block;
-		clear: both;
+	@media (min-width: $tablet-up) {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1000px;
+	}
+
+	@media (min-width: $large-desktop-up) {
+		max-width: none;
 	}
 
 	&:last-child {
@@ -28,6 +47,11 @@
 		font-size: 1rem;
 		line-height: initial;
 
+		@media (min-width: $tablet-up) {
+			font-size: 1.5rem;
+			margin-bottom: .5rem;
+		}
+
 		a {
 			text-decoration: none;
 
@@ -40,7 +64,7 @@
 			content: '\00bb';
 			top: 0;
 			left: -1rem;
-			line-height: 1.15rem;
+			line-height: 1;
 			color: $red;
 			opacity: 0;
 			transition: all .5s;
@@ -54,7 +78,6 @@
 	}
 
 	.description {
-		font-size: .875rem;
 		margin: 0 0 .75rem 0;
 
 		@include font-color-accent;
@@ -69,14 +92,21 @@
 	}
 
 	.built-with {
-		font-size: .875rem;
 		margin-bottom: .75rem;
+
+		@media (min-width: $tablet-up) {
+			padding-top: 1rem;
+		}
 
 		@include font-color-accent;
 
 		h4 {
 			font-size: .875rem;
 			font-weight: normal;
+
+			@media (min-width: $tablet-up) {
+				font-size: 1rem;
+			}
 		}
 
 		a {
@@ -93,11 +123,20 @@
 	.project-sublist {
 		font-size: .875rem;
 
+		@media (min-width: $tablet-up) {
+			font-size: 1rem;
+		}
+
 		h4 {
 			display: inline-block;
 			margin-right: .5rem;
 			font-weight: 300;
 			font-size: .875rem;
+
+
+			@media (min-width: $tablet-up) {
+				font-size: 1rem;
+			}
 		}
 
 		> li {
@@ -125,9 +164,14 @@
 	}
 
 	.details {
+		font-size: .875rem;
+		padding-right: 2rem;
+		padding-bottom: 1rem;
+
 		@media (min-width: $tablet-up) {
-			margin-right: 2rem;
-			width: 17rem;
+			width: 50%;
+			padding: 0;
+			font-size: 1rem;
 		}
 	}
 
@@ -146,7 +190,11 @@
 		transition: margin .5s;
 
 		@media (min-width: $tablet-up) {
+			width: 50%;
+			max-width: 440px;
 			margin-top: 0;
+			padding-left: 2rem;
+			align-self: end;
 		}
 	}
 
@@ -160,6 +208,10 @@
 
 	.desktop-thumbnail {
 		width: 300px;
+
+		@media (min-width: $tablet-up) {
+			width: 100%;
+		}
 	}
 
 	.mobile-thumbnail {
@@ -167,12 +219,21 @@
 		top: 34%;
 		right: 10%;
 		width: 26%;
+
+		@media (min-width: $tablet-up) {
+			top: 24%;
+		}
 	}
 
 	.nasa-apod-mobile-thumbnail {
 		top: 8.5%;
 		right: auto;
 		left: -5%;
+
+		@media (min-width: $tablet-up) {
+			top: 20%;
+			left: 5%;
+		}
 	}
 
 	.weather-pwa-mobile-thumbnail {
@@ -180,5 +241,12 @@
 		right: auto;
 		left: 5%;
 
+		@media (min-width: $tablet-up) {
+			top: 24%;
+		}
 	}
+}
+
+.fcc-project {
+	display: block;
 }

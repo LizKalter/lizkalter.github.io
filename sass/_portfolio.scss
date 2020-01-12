@@ -37,6 +37,10 @@
 
 	.content {
 		margin-top: 1rem;
+
+		@media (min-width: $tablet-up) {
+			margin-top: 2rem;
+		}
 	}
 
 	.box {

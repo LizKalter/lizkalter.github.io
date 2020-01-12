@@ -5,6 +5,7 @@ $mobile-portrait-down: 575.98px;
 $mobile-portrait-up: 576px;
 $tablet-up: 768px;
 $desktop-up: 992px;
+$large-desktop-up: 1300px;
 
 $dark-mode-bg-color: #0b0036;
 $dark-mode-font-color: lighten($dark-mode-bg-color, 85%);
@@ -112,7 +113,6 @@ h6 {
 }
 
 .box {
-	display: block;
 	border-radius: 10px;
 	background-color: #eee;
 	box-shadow: 0 0 20px #ccc;
@@ -147,6 +147,10 @@ h6 {
 	text-transform: uppercase;
 	font-size: .75rem;
 	transition: color, background-color .5s;
+
+	@media (min-width: $tablet-up) {
+		font-size: .875rem;
+	}
 
 	&:hover,
 	&:focus {
