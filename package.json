@@ -14,11 +14,10 @@
   ],
   "author": "Liz Kalter",
   "private": true,
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^9.7.2",
-    "node-sass": "^4.13.0",
+    "autoprefixer": "^9.7.6",
+    "node-sass": "^4.14.1",
     "postcss-cli": "^6.1.3"
   }
 }
